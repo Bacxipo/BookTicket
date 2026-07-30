@@ -1,3 +1,4 @@
+import 'package:booktickets/screens/ticket_view.dart';
 import 'package:booktickets/utils/app_styles.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
@@ -88,6 +89,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          const Gap(15),
+          TicketView(),
         ],
       ),
     );

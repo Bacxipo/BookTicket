@@ -1,0 +1,37 @@
+name: 🐛 Báo cáo lỗi kỹ thuật (Bug Report)
+description: Khởi tạo một biểu mẫu chuẩn hóa để báo cáo lỗi cho các kỹ sư lập trình.
+title: "[BUG]: <Tóm tắt ngắn gọn lỗi của bạn>"
+labels: ["type/bug", "triage-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã dành thời gian báo lỗi để giúp dự án hoàn thiện hơn!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 1. Mô tả chi tiết lỗi
+      description: Điều gì đang xảy ra với phần mềm của bạn?
+      placeholder: Viết mô tả lỗi tại đây...
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 2. Các bước tái hiện lỗi
+      description: Liệt kê thứ tự các bước để kỹ sư có thể làm chạy lại lỗi này trên máy của họ.
+      placeholder: |
+        1. Chạy lệnh...
+        2. Nhập tham số...
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: 3. Hệ điều hành đang sử dụng
+      options:
+        - Ubuntu Linux (24.04/26.04)
+        - Windows 11
+        - macOS Sequoia
+    validations:
+      required: true
